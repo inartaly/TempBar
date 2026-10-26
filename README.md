@@ -27,6 +27,20 @@ brew install --cask tempbar
 Homebrew 7 requires third-party taps to be trusted before it will load their
 casks.
 
+Homebrew marks downloaded apps as quarantined. Because TempBar is ad-hoc signed
+but not notarized, macOS may block the first launch. Allow it under
+**System Settings → Privacy & Security**, or run:
+
+```sh
+xattr -dr com.apple.quarantine /Applications/TempBar.app
+```
+
+To remove preferences and the optional Start at Login agent when uninstalling:
+
+```sh
+brew uninstall --cask --zap tempbar
+```
+
 ## Install a release
 
 Download the latest `TempBar-*.zip` from the
