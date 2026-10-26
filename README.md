@@ -16,6 +16,17 @@ reading stays on the Mac.
 - macOS 13 or later
 - Swift 5.9 or later (Command Line Tools are enough; Xcode is not required)
 
+## Install with Homebrew
+
+```sh
+brew tap inartaly/tap
+brew trust inartaly/tap
+brew install --cask tempbar
+```
+
+Homebrew 7 requires third-party taps to be trusted before it will load their
+casks.
+
 ## Install a release
 
 Download the latest `TempBar-*.zip` from the
