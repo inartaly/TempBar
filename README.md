@@ -16,6 +16,20 @@ reading stays on the Mac.
 - macOS 13 or later
 - Swift 5.9 or later (Command Line Tools are enough; Xcode is not required)
 
+## Install a release
+
+Download the latest `TempBar-*.zip` from the
+[releases page](https://github.com/inartaly/TempBar/releases), unzip it, and move
+`TempBar.app` to `~/Applications` or `/Applications`.
+
+The release build is ad-hoc signed but not notarized, so macOS may block the
+first launch. If that happens, allow TempBar under **System Settings → Privacy &
+Security**, or remove the quarantine flag:
+
+```sh
+xattr -dr com.apple.quarantine ~/Applications/TempBar.app
+```
+
 ## Build and install
 
 ```sh
