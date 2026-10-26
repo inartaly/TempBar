@@ -25,7 +25,8 @@ brew install --cask tempbar
 ```
 
 Homebrew 7 requires third-party taps to be trusted before it will load their
-casks.
+casks. Homebrew installs to `/Applications`; if you already installed TempBar
+manually in `~/Applications`, remove that copy first to avoid two menu bar items.
 
 Homebrew marks downloaded apps as quarantined. Because TempBar is ad-hoc signed
 but not notarized, macOS may block the first launch. Allow it under
